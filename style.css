@@ -1,0 +1,85 @@
+/* uses at least five (5) different CSS selectors (e.g. tag (example), class (.example), or ID (#example)), and within which you use a total of at least five (5) different CSS properties, such as font-size, or margin */
+:root {
+  --harvard-crimson: #a51c30;
+}
+
+.contact-container a:hover {
+  text-decoration: none;
+}
+
+.contact-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.contact-btn {
+  width: 5rem;
+  height: 5rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px -5px #0000001a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.1s ease-in;
+}
+
+.github {
+  color: #333333;
+}
+
+.github:hover {
+  background-color: hsla(0, 0%, 20%, 0.25);
+}
+
+.linkedin {
+  color: #0077b5;
+}
+
+.linkedin:hover {
+  background-color: hsla(201, 100%, 35%, 0.25);
+}
+
+.email {
+  color: var(--harvard-crimson);
+}
+
+.email:hover {
+  background-color: hsla(351, 71%, 38%, 0.25);
+}
+
+.projects {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.media img {
+  width: 64px;
+  height: 64px;
+}
+
+.about-items .media {
+  margin: 2rem;
+}
+
+@media (max-width: 576px) {
+  .contact-container {
+    flex: 1 0 100%;
+    gap: 1rem;
+  }
+
+  .contact-container a {
+    display: flex;
+    flex: 1 0 100%;
+  }
+
+  .contact-btn {
+    width: 100%;
+  }
+}
